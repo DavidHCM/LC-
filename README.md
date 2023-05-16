@@ -1,2 +1,2 @@
 # LC-
-C++ lear
+C++ learning path
