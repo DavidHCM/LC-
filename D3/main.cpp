@@ -34,6 +34,7 @@ int main()
     */
 
     // Expresion
+    /*
     float a,b,res;
 
     cout << "val a:";
@@ -44,7 +45,21 @@ int main()
     res = (a/b) + 1;
 
     cout << "Res: " <<res<<endl;
+     */
+    float a,b,c,d,res;
 
+    cout << "val a:";
+    cin >> a;
+    cout << "val b";
+    cin >> b;
+    cout << "val c:";
+    cin >> c;
+    cout << "val d";
+    cin >> d;
+
+    res = (a+b) / (c+d);
+
+    cout << "Res: " <<res<<endl;
 
     return 0;
 }
