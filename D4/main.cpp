@@ -21,7 +21,50 @@ int main() {
     cout << name;
      */
 
+    bool sent = true;
+    int a,b;
+    while(sent)
+    {
 
+            int opc;
+            cout << "Que operacion quieres hacer: " << endl;
+            cout << "1-Sumar: 2-Restar: 3-Multiplicar: " << endl;
+            cin >> opc;
+            switch (opc)
+            {
+                case 1:
+                    cout << "Dime el primer numero a sumar: ";
+                    cin >> a;
+                    cout << "Dime el segundo numero a sumar: ";
+                    cin >> b;
+                    cout << "Resultado: " << (a + b) << endl;
+                    a = 0;
+                    b = 0;
+                    break;
+                case 2:
+                    cout << "Dime el primer numero a restar: ";
+                    cin >> a;
+                    cout << "Dime el segundo numero a restar: ";
+                    cin >> b;
+                    cout << "Resultado: " << (a - b) << endl;
+                    a = 0;
+                    b = 0;
+                    break;
+                case 3:
+                    cout << "Dime el primer numero a multiplicar: ";
+                    cin >> a;
+                    cout << "Dime el segundo numero a multiplicar: ";
+                    cin >> b;
+                    cout << "Resultado: " << (a * b) << endl;
+                    a = 0;
+                    b = 0;
+                    break;
+                case 4:
+                    sent = false;
+                default: cout << "Elige otra opcion" << endl;
+            }
+
+    }
 
     return 0;
 }
