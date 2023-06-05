@@ -28,7 +28,7 @@ int main() {
 
             int opc;
             cout << "Que operacion quieres hacer: " << endl;
-            cout << "1-Sumar: 2-Restar: 3-Multiplicar: " << endl;
+            cout << "1-Sumar: 2-Restar: 3-Multiplicar: 4-Salir: " << endl;
             cin >> opc;
             switch (opc)
             {
@@ -61,7 +61,6 @@ int main() {
                     break;
                 case 4:
                     sent = false;
-                default: cout << "Elige otra opcion" << endl;
             }
 
     }
