@@ -21,6 +21,7 @@ int main() {
     cout << name;
      */
 
+    /*
     bool sent = true;
     int a,b;
     while(sent)
@@ -64,6 +65,9 @@ int main() {
             }
 
     }
+     */
+
+    // Story creations to practice strings
 
     return 0;
 }
