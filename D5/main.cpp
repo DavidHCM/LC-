@@ -91,5 +91,9 @@ int main()
     firstBook.pages = 100;
     firstBook.ID = 1;
 
+    cout << firstBook.ID << endl;
+
+    // Constructors
+
     return 0;
 }
