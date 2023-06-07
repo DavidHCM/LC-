@@ -16,7 +16,12 @@ void hello(string indi)
 // This class can be seen as a template for a book datatype (this is a very ambiguous example)
 class Book
 {
-    
+    // Attributes public
+    public:
+        string title;
+        string author;
+        int pages;
+        int ID;
 };
 
 int main()
@@ -76,8 +81,15 @@ int main()
 
 
     /*
-     * A class can be seen as a new datatype in de POO, where u can make a class that specify a datatype to make something to exist
+     * A class can be seen as a new datatype in de POO, where u can make a class that specify a datatype to make something to exist. And an object is the actual instance of the class.
      */
+
+    // Creating the book with an object:
+    Book firstBook;
+    firstBook.title = "C++ Starters";
+    firstBook.author = "No one";
+    firstBook.pages = 100;
+    firstBook.ID = 1;
 
     return 0;
 }
