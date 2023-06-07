@@ -2,6 +2,15 @@
 
 using namespace std;
 
+
+// Functions
+// Same as C the functions are the same and have the same principals
+void hello(string indi)
+{
+    cout << indi << endl;
+}
+
+
 int main()
 {
     /*
@@ -29,9 +38,11 @@ int main()
 
     // Arrays
 
-    // The arrays are similar to C arrays, with the same sintaxis
+    // The arrays are same as C, with the same sintaxis
 
-    int numsLuc[] = {1,2,3,4,5,6};
+    // Functions are the same as C
+    // hello("Hello!");
+
 
     return 0;
 }
