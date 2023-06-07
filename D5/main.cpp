@@ -2,14 +2,22 @@
 
 using namespace std;
 
-
+/*
 // Functions
 // Same as C the functions are the same and have the same principals
 void hello(string indi)
 {
     cout << indi << endl;
 }
+ */
 
+//  --- Class ---
+
+// This class can be seen as a template for a book datatype (this is a very ambiguous example)
+class Book
+{
+    
+};
 
 int main()
 {
@@ -34,7 +42,7 @@ int main()
     cout << "Roses are " << color << endl;
     cout << noun << " are blue" << endl;
     cout << "I love " << someone << endl;
-     */
+
 
     // Arrays
 
@@ -47,8 +55,10 @@ int main()
 
     // While and for work the same as C
 
-    //---------------------------------------
+
     // Pointers
+
+
     int age = 19;
     int *pAge = &age;
     // Here with & im printing the pointer of the location of the age.
@@ -56,8 +66,18 @@ int main()
     cout << "Original age location: " << &age << endl;
 
     cout << "Pointer of the age location: " << pAge << endl;
+    // We are getting the reference of the memories address
     cout << "Value of the pointer locating the age: "<< *pAge << endl;
+    */
 
+    // ==========================================================
+    // Classes & Objects
+    // ==========================================================
+
+
+    /*
+     * A class can be seen as a new datatype in de POO, where u can make a class that specify a datatype to make something to exist
+     */
 
     return 0;
 }
