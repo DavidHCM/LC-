@@ -55,13 +55,16 @@ public:
 
     Movie(string aTitle, string aDirector, string aRating)
     {
+        setDirector(aDirector);
         setTitle(aTitle);
         setRating(aRating);
     }
 
+    // Setters
+
     void setRating(string aRating)
     {
-        title = aRating;
+        rating = aRating;
     }
     void setTitle(string aTitle)
     {
@@ -71,6 +74,20 @@ public:
     {
         director = aDirector;
     }
+
+    // Getters
+    string getRating()
+    {
+        return rating;
+    }
+    string getTitle()
+    {
+        return title;
+    }
+    string getDirector()
+    {
+        return director;
+    }
 };
 
 
@@ -78,7 +95,9 @@ public:
 int main()
 {
     Movie avengers("The avengers","Joss Whedon", "PG-13");
-    
+    cout << avengers.getRating() << endl;
+    avengers.setRating("NR");
+    cout << avengers.getRating();
 
 
     return 0;
