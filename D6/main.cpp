@@ -44,28 +44,23 @@ Students student1("Jim","Business",2.4);
 
  */
 
+
+
 class Movie
 {
 private:
     string title;
     string director;
-    string rating;
-
 public:
-
-    Movie(string aTitle, string aDirector, string aRating)
+    Movie(string aTitle, string aDirector)
     {
         setDirector(aDirector);
         setTitle(aTitle);
-        setRating(aRating);
+
     }
 
     // Setters
 
-    void setRating(string aRating)
-    {
-        rating = aRating;
-    }
     void setTitle(string aTitle)
     {
         title = aTitle;
@@ -76,10 +71,7 @@ public:
     }
 
     // Getters
-    string getRating()
-    {
-        return rating;
-    }
+
     string getTitle()
     {
         return title;
@@ -90,11 +82,33 @@ public:
     }
 };
 
+class Ratings : Movie
+{
+public:
+    string rating;
+
+    Ratings(string aTitle1, string aDirector1, string aTitle, string aDirector, string aRating) : Movie(aTitle1, aDirector1)
+    {
+        setDirector(aDirector);
+        setTitle(aTitle);
+        setRating(aRating);
+    }
+
+    void setRating(string aRating)
+    {
+        rating = aRating;
+    }
+    string getRating()
+    {
+        return rating;
+    }
+
+};
 
 
 int main()
 {
-    Movie avengers("The avengers","Joss Whedon", "PG-13");
+    Ratings avengers(std::string(), std::string(), "The avengers", "Joss Whedon", "PG-13");
     cout << avengers.getRating() << endl;
     avengers.setRating("NR");
     cout << avengers.getRating();
