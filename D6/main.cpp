@@ -12,10 +12,12 @@ public:
 
     // Constructor
     // The constructor goes inside the class declaration
-    Book(string name)
+    Book(string name, string aAuthor, int aPages)
     {
         // This constructor is executing each time we call the function
-        cout << "Creating object: " << name << endl;
+        title = name;
+        author = aAuthor;
+        pages = aPages;
     }
 };
 
@@ -25,10 +27,8 @@ public:
 
 int main()
 {
-    Book book1("Harry potter");
-    book1.title = "Harry Potter";
-    book1.author = "JK Rowling";
-    book1.pages = 300;
+    Book book1("Harry potter","JK Rowling", 300);
+    
 
 
 
