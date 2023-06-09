@@ -2,6 +2,7 @@
 
 using namespace std;
 
+/*
 // Class
 class Students
 {
@@ -27,13 +28,7 @@ public:
     }
 };
 
-
-
-
-
-int main()
-{
-    Students student1("Jim","Business",2.4);
+Students student1("Jim","Business",2.4);
     Students student2("Pam","Art",3.6);
 
 
@@ -47,7 +42,28 @@ int main()
     }
 
 
+ */
 
+class Movie
+{
+public:
+    string title;
+    string director;
+    string rating;
+    Movie(string aTitle, string aDirector, string aRating)
+    {
+        title = aTitle;
+        director = aDirector;
+        rating = aRating;
+    }
+};
+
+
+
+int main()
+{
+    Movie avengers("The avengers","Joss Whedon", "PG-13");
+    cout << avengers.rating << endl;
 
 
     return 0;
