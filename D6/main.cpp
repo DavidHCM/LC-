@@ -46,15 +46,30 @@ Students student1("Jim","Business",2.4);
 
 class Movie
 {
-public:
+private:
     string title;
     string director;
     string rating;
+
+public:
+
     Movie(string aTitle, string aDirector, string aRating)
     {
+        setTitle(aTitle);
+        setRating(aRating);
+    }
+
+    void setRating(string aRating)
+    {
+        title = aRating;
+    }
+    void setTitle(string aTitle)
+    {
         title = aTitle;
+    }
+    void setDirector(string aDirector)
+    {
         director = aDirector;
-        rating = aRating;
     }
 };
 
@@ -63,7 +78,7 @@ public:
 int main()
 {
     Movie avengers("The avengers","Joss Whedon", "PG-13");
-    cout << avengers.rating << endl;
+    
 
 
     return 0;
