@@ -3,21 +3,17 @@
 using namespace std;
 
 // Class
-class Book
+class Students
 {
 public:
-    string title;
-    string author;
-    int pages;
-
-    // Constructor
-    // The constructor goes inside the class declaration
-    Book(string name, string aAuthor, int aPages)
+    string name;
+    string major;
+    int gpa;
+    Students(string aName, string aMajor, int aGPA)
     {
-        // This constructor is executing each time we call the function
-        title = name;
-        author = aAuthor;
-        pages = aPages;
+        name = aName;
+        major = aMajor;
+        gpa = aGPA;
     }
 };
 
@@ -27,8 +23,10 @@ public:
 
 int main()
 {
-    Book book1("Harry potter","JK Rowling", 300);
-    
+    Students student1("Jim","Business",2.4);
+    Students student2("Pam","Art",3.6);
+
+
 
 
 
